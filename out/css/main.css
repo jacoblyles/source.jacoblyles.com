@@ -49,7 +49,7 @@ li {
 	padding: 40px 10% 40px 10%;
 	color: black;
 	line-height: 1.5em;
-	font-family: 'PT Serif',Georgia,"Helvetica Neue";
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 
 #text p{
