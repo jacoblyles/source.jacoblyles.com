@@ -1,33 +1,40 @@
 {% extends "_base.html" %}
 {% block content %}
-<img src="/img/fence_banner.jpg" id="cover">
 <div id="text">
-	<p>I'm a software engineer at <a href="http://www.coursera.org">Coursera</a> living in the SF bay area. I am also a <a href="http://startx.stanford.edu/">StartX alumnus</a>, and a former cofounder of <a href="http://www.gameclosure.com">Game Closure</a>. Find out more <a href="/about.html">about me</a></p>
-	<p>Over the years I have accumulated a bit of writing. Check out a list of <a href="/writing.html">my works</a> and <a href="http://jacobexmachina.blogspot.com/p/favorites.html">collected favorites</a></p>
-	<p>I invented a political philosophy called <a href="http://jacobexmachina.blogspot.com/p/structuralism.html">Structuralism</a>, and I care about it a lot. Good government technology is a necessary piece of the infrastructure for progress</p>
-
-	<div id="contact">
-		<h2>Contact me:</h2>
-		<p>
-			<a href="https://twitter.com/jacoblyles" class="twitter-follow-button" data-show-count="true">Follow @jacoblyles</a>
-				<script>
-					!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-				</script>
-			</p>
-		<p>
-			<a href="http://www.linkedin.com/pub/jacob-lyles/11/9b6/17b">
-      				<img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x25.png" width="160" height="25" border="0" alt="View Jacob Lyles's profile on LinkedIn">
-      			</a>
-      		</p>
-      		<p>
-      			<a href="http://www.goodreads.com/user/show/8693028-jake"> <img border="0" alt="Jake's book recommendations, liked quotes, book clubs, book trivia, book lists (read shelf)" src="http://www.goodreads.com/images/badge/badge1.jpg"></a>
-      		</p>
-      		<p>
-      			<a href="mailto:jacob.lyles@gmail.com">email</a>
-		</p>
-		<p>
-			fork me on <a href="https://github.com/jacoblyles">github</a>
-		</p>
-	</div>
-</div>									
+  <div class="image">
+    <img src="/img/goldengate.jpg" />
+  </div>
+  <p>I live in the SF Bay area</p>
+  <div class="image">
+    <img src="/img/coursera.jpg" class="coursera"/>
+  </div>
+	<p>I'm a software engineer at <a href="http://www.coursera.org">Coursera</a>. I am also a <a href="http://startx.stanford.edu/">StartX alumnus</a>, and a former cofounder of <a href="http://www.gameclosure.com">Game Closure</a>. In a previous life, I was an investment banker.</p>
+  <div class="image">
+    <img src="/img/no-sopa.jpg" />
+  </div>
+  <p class="continue">I help organize the <a href="http://www.meetup.com/Politihacks-of-Silicon-Valley/">Politihacks of Silicon Valley</a> meetup group to upgrade politics through supporting innovation-friendly policy and candidates. If you're interested in Open Access, internet freedom, high-skilled immigration reform, or IP reform, please join us.</p>
+  
+  <p class="continue">I write on post-libertarian politics, culture, and technology at various places around the internet</p>
+    <ul style="list-style-type:circle;">
+      <li>My <a href="http://jacobexmachina.blogspot.com/">personal blog</a></li>
+      <li>My posts on <a href="http://athousandnations.com/author/jacoblyles/">Let a Thousand Nations Bloom</a></li>
+      <li>I troll hard on <a href="http://news.ycombinator.com/user?id=jacoblyles">Hacker News</a></li>
+      <li><a href="https://twitter.com/#!/jacoblyles">140 chars at a time</a></li>
+      <li>My posts on <a href="http://distributedrepublic.net/blog/880">Distributed Republic/Catallarchy</a> (defunct)</li>
+      <li><a href="http://prrometheus.blogspot.com/">Enlightened Liberty</a> - a blog exploring the intersection of Buddhism and Libertarianism (defunct)</li>
+    </ul>
+  <p></p>
+  <div class="image">
+    <img src="/img/seasteading.jpg" />
+  </div>
+	<p>I care about improving governance technology. I invented a meta-political philosophy called <a href="http://jacobexmachina.blogspot.com/p/structuralism.html">Structuralism</a> to explain why I am so excited about charter cities, seasteading, and other innovations in government.</p>
+</div>				
+{% endblock %}
+{% block footer %}
+<div>
+Image of San Francisco by Bernard Gagnon (Own work) [<a href="http://www.gnu.org/copyleft/fdl.html">GFDL</a> or <a href="http://creativecommons.org/licenses/by-sa/3.0">CC-BY-SA-3.0-2.5-2.0-1.0</a>], <a href="http://commons.wikimedia.org/wiki/File%3AGolden_Gate_Bridge%2C_SF.jpg">via Wikimedia Commons</a>
+</div>
+<div>
+Seasteading Image by JackDayton at en.wikipedia (Transferred from en.wikipedia) [<a href="http://creativecommons.org/licenses/by/3.0">CC-BY-3.0</a>, <a href="http://www.gnu.org/copyleft/fdl.html">GFDL</a> or <a href="http://creativecommons.org/licenses/by/3.0">CC-BY-3.0</a>], <a href="http://commons.wikimedia.org/wiki/File%3AAndrasGyorfi.jpg">from Wikimedia Commons</a>
+</div>
 {% endblock %}

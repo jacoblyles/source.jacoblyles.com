@@ -1,5 +1,6 @@
 body {
-	background-color: #111;
+	background-color: #2f2f2f;
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 
 h1{
@@ -18,30 +19,83 @@ li {
 	list-style-type: circle;
 }
 
-#title {
-	font-family: 'Average', sans-serif;
-	text-align: center;
-	font-size: 60pt;
-	height: 100px;
-	padding-top: 40px;
-	color: #EEE;
-	margin-left: 20%;
+
+.wrapper {
+	background-color: #FFF;
 }
 
-#wrapper {
-	color: black;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 20px;
-	max-width: 800px;
-	font-family: 'PT Serif',Georgia,"Helvetica Neue";
-	overflow: auto;
-	line-height: 1.5em;
+/* header sections */
+
+.page-info {
+	background-color: #2f2f2f;
+	position: fixed;
+	width: 26%;
+	max-width: 250px;
+	min-width: 200px;
+	height: 100%;
+	padding-left: 3%;
+	padding-top: 30px;
+	z-index: 100;
+	text-align: left;
+	font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.page-info h2,h3{
+	color: #FFF;
+	font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.page-info ul {
+	margin: 40px 0px;
+}
+
+.page-info li{
+	margin: 10px 0px;
+	font-size: 15px;
+	line-height: 14px;
+	list-style-type: none;
+}
+
+.page-info a{
+	text-decoration: none;
+	border: 4px solid #999;
+	border-radius: 20px;
+	padding: 7px;
+	display: inline-block;
+	color: #CCC;
+}
+
+.page-info a:hover{
+	border-color: #77A;
+	cursor: pointer;
+	color: #77A;
+}
+
+.header img{
+	border-radius: 50px;
+	height: 150px;
+	width: 150px;
+	margin: 20px 0px;
+}
+
+/* content */
+
+.right {
+	position: relative;
+	margin-left: 26%;
+	z-index: 10;
+	background-color: rgba(255, 255, 255,1.0);
+}
+
+#footer {
+	clear: both;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10px;
 }
 
 #content {
-	background-color: rgba(255, 255, 255,1.0);
-	min-height: 300px;
+	height: 100%;
 }
 
 #text {
@@ -49,28 +103,46 @@ li {
 	padding: 40px 10% 40px 10%;
 	color: black;
 	line-height: 1.5em;
-	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	min-height: 900px;
+	max-width: 650px;
 }
 
 #text p{
-	margin: 0 0 20px;
+	margin: 10px 0px 70px 0px;
+}
+
+#text ul{
+	margin-left: 20px;
 }
 
 #text li{
 	margin-top: 1em;
 }
 
-#cover {
-	max-width: 100%;
-	height: auto;
+#text h2{
+	border-bottom: 1px dotted #AAA;
+	width: 100%;
+	display: block;
+	margin: 30px 0px 15px 0px;
 }
 
-#contact {
-	border-radius: 6px;
-	background-color: #FFC;
-	display: inline-block;
-	padding:10px;
+#text .image{
+	width: 100%;
+	text-align: center;
 }
+
+#text .continue{
+	margin-bottom: 15px;
+}
+
+.coursera{
+	height: auto;
+	width: 250px;
+	margin: 0px 10px;
+}
+
+
+/* resume styles */
 
 #resume {
 	margin-top: 20px;
@@ -112,6 +184,11 @@ li {
 	margin: 10px 0 0 10px;
 }
 
+#footer{
+	font-size: 0.7em;
+	line-height: 18px;
+}
+
 .item ul {
 	margin: 10px 0 15px 15px;
 	font-size: 0.95em;
@@ -120,52 +197,5 @@ li {
 
 
 
-#nav {
-	text-align: left;
-	float: left;
-	height: 100%;
-	font-size: 1.4em;
-}
 
-#nav ul{
-	list-style-type: none;
-}
-
-#nav li{
-	border-bottom: 1px dotted white;
-	margin-top: 20px;
-}
-
-#nav li:hover{
-	color: blue;
-	border-bottom: 1px dotted blue;
-}
-
-#nav a {
-	color: #CCC;
-	text-decoration: none;
-}
-#nav a:hover { 
-	color: #AAF;
-}
-#nav a:visited {
-	color: #CCC;
-}
-
-.left {
-	float: left;
-	width: 10%;
-	height: 100%;
-}
-.right {
-	float: right;
-	width: 80%;
-}
-
-#footer {
-	color: #999;
-	font-family: "Helvetica Neue";
-	margin-top: 20px;
-	text-align: center;
-}
 

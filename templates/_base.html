@@ -9,37 +9,42 @@
   <title>Liberty. Fraternity. Maximum Awesomeness.</title>
 </head>
 <body>
-  <div id="wrapper">
-    <div id="title">
-      Jacob Lyles
-    </div>
-    <div class="left">
-      <ul id="nav">
+  <div class="wrapper">
+    <div class="page-info">
+      <div class="header">
+        <img src="/img/me_icon.jpg" id="cover">
+        <h2>
+          Jacob Lyles
+        </h2>
+        <h3>
+          engineer. activist. writer.
+        </h3>
+      </div>
+      <ul>
         <li>
-          <a href="/">home</a>
+          <a href="mailto:jacob.lyles@gmail.com">email</a>
         </li>
         <li>
-          <a href="/about.html">about</a>
+          <a href="https://twitter.com/jacoblyles">twitter @jacoblyles</a>
         </li>
         <li>
-          <a href="/writing.html">writing</a>
+          <a href="https://github.com/jacoblyles">github</a>
         </li>
         <li>
-          <a href="/resume.html">resume</a>
-        </li>
-        <li>
-          <a href="http://jacobexmachina.blogspot.com/p/structuralism.html">Structuralism</a>
+          <a href="http://www.goodreads.com/user/show/8693028-jake">goodreads</a>
         </li>
       </ul>
     </div>
+
+
     <div class="right">
-      <div id="content">
         {% block content %}
         {% endblock %}
-      </div>
-      <div id="footer">
-        copyright 1983 - 2012 
-      </div>
+        <div id="footer">
+          {% block footer %}
+          {% endblock %}
+          <div style="clear:both">Please feel free to use this page's contents with attribution <a href="http://creativecommons.org/licenses/by/3.0">CC-BY-3.0</a></div>
+        </div>
     </div>
   </div>
 </body>
